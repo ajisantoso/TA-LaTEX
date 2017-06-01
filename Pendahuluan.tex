@@ -1,0 +1,101 @@
+\chapter{Pendahuluan}
+\section{Latar Belakang}
+Kejadian gawat darurat dapat diartikan sebagai keadaan dimana seseorang membutuhkan pertolongan segera karena apabila tidak mendapatkan pertolongan dapat mengancam jiwa atau menimbulkan kecacatan. Menurut American Hospital Association (AHA) dalam Herkutanto \cite{herkutanto2007} keadaan darurat adalah kondisi dimana respon dibutuhkan dari pasien, keluarga, atau siapapun yang dianggap mempunyai kewajiban untuk mengambil keputusan membawa pasien ke rumah sakit untuk tindakan medis segera mungkin. Dalam penanganan gawat darurat fase pra-rumah sakit terlibat pula unsur-unsur masyarakat non-tenaga kesehatan. Kecepatan dan ketepatan tindakan pada fase pra-rumah sakit sangat menentukan tingkat keselamatan pasien.
+Fase pra-rumah sakit dimulai ketika warga sekitar lokasi kejadi memberikan pertolongan pertama atau memanggil tim medis gawat darurat hingga selama transportasi ke rumah sakit. Pada fase ini waktu menjadi faktor penting berhubungan dengan tingkat keselamatan jiwa korban \cite{boswick}. Tidak setiap rumah sakit dapat menyediakan perawatan yang tepat sesuai kondisi korban pada saat kejadian gawat darurat. Kesalahan dalam membawa korban ke rumah sakit yang tidak sesuai kondisi korban dan sumber daya rumah sakit bisa berakibat mesti berpindahnya pasien ke tempat lain hingga menemukan kesesuaian. Pembuat keputusan harus menentukan secara tepat dan cepat pemilihan Unit Gawat Darurat (UGD) di rumah sakit tujuan. Sedangkan pembuat keputusan mungkin merupakan masyarakat awam di lokasi yang minim informasi penanganan gawat darurat. Untuk itu diperlukan sebuah sistem pakar untuk permasalahan pemilihan UGD
+Kejadian yang sering terjadi adalah pengambil keputusan hanya memperhitungkan jarak rumah sakit terdekat. Padahal jika rumah sakit yang dituju tidak mempunyai ketersediaan dokter jaga sesuai kondisi korban, ketersediaan ruang ICU, ketersediaan ruang operasi maka harus berpindah ke rumah sakit lain hingga menemukan kesesuaian \cite{weng2009}. Sebagai contoh adalah pengalaman pribadi netizen yang termuat di portal berita \cite{priyono2015} yang ditolak dua rumah sakit dengan alasan kamar perawatan penuh dan tidak tersedia alat sesuai untuk menangani kondisi gawat darurat yang sedang dialami.
+Weng dan Kuo \cite{weng2009} dalam penelitiannya membangun sistem pakar gawat darurat untuk daerah dengan sumber daya medis yang kurang. Dalam penelitannya Weng dan Kuo membuat knowledge base pemilihan UGD untuk menemukan kesesuaian antara UGD dan pasien. Mesin inferensi yang digunakan adalah metode runut maju (Forward Chaining). Priyandari \cite{priyandari2011} menggunakan model kaidah pemilihan UGD dari penelitian Weng dan Kuo tetapi mengganti kriteria jarak dengan estimasi waktu tempuh untuk mengatasi arus lalu lintas perkotaan yang padat. Mesin inferensi yang digunakan sama yaitu forward chaining. Dalam penerapan Forward chaining timbul masalah ketika rule-base terlalu besar karena terjadi repetisi pemeriksaan setiap rule
+terhadap fakta akan mahal dari segi komputasi.Sehingga kompleksitas yang dihasilkan eksponensial \cite{freeman}.
+Pada tugas akhir ini metode yang diusulkan untuk menentukan pemilihan UGD menggunakan algoritma Rete. Algoritma yang dikembangkan Dr. Charles Forgy \cite{charles1982} ini menggunakan hubungan antar nodes dalam graf asiklik berarah. Algoritma ini dipilih karena dapat memberikan peningkatan kecepatan komputasi forward chaining rule-based system dengan mengurangi usaha yang dilakukan untuk komputasi berulang dari conflict set setelah aturan (rule) dieksekusi. Faktor yang menjadi pertimbangan pemilihan adalah kondisi pasien, waktu tempuh lokasi ke UGD, ketersediaan dokter jaga, ketersediaan ruang operasi, ruang inap dan ruang ICU rumah sakit. Daerah kajian yang akan digunakan pada tugas akhir ini adalah rumah sakit dengan Unit Gawat Darurat di wilayah administrasi kota Bandung.
+\section{Perumusan Masalah}
+Berdasarkan latar belakang dirumuskan permasalahan sebagai berikut:
+\begin{enumerate}
+    \item Bagaimana implementasi algoritma Rete dalam memberikan pemilihan UGD?
+    \item Bagaimana pengaruh penerapan algoritma Rete dalam sistem pakar pemilihan UGD?
+    \item Bagaimana performansi sistem pakar dalam menghasilkan pemilihan UGD?
+\end{enumerate}
+\section{Batasan Masalah}
+Adapun batasan masalah pada tugas akhir ini, yaitu:
+\begin{enumerate}
+	\item Perhitungan waktu tempuh dari titik lokasi kejadian gawat darurat ke UGD sudah diketahui dan tidak menjadi pokok bahasan.
+	\item Rute yang dipilih untuk menuju UGD tidak menjadi pokok bahasan dalam tugas akhir ini.
+\end{enumerate}
+\section{Tujuan}
+Tujuan dari dari tugas akhir ini antara lain:
+\begin{enumerate}
+    \item Mengetahui penerapan algoritma Rete hingga menghasilkan sistem pakar pemilihan UGD.
+    \item Mengetahui pengaruh penerapan algoritma Rete dalam sistem pakar pemilihan UGD.
+    \item Mengetahui pengaruh penerapan algoritma Rete dalam sistem pakar pemilihan UGD.
+\end{enumerate}
+\section{Metodelogi Penyelesaiaan Masalah}
+Adapun metode penyelesaiaan yang akan dilakukan untuk penyelesaiaan tugas akhir ini yaitu:
+\begin{enumerate}
+	\item Studi Literatur\\
+	Penulis melakukan pencarian informasi yang dibutuhkan untuk penyelesaiaan tugas akhir ini melalui buku, jurnal yang telah terindek publikasi, dan berbagai sumber lain yang membahas sistem pakar (expert system) serta algoritma Rete sehingga dapat merumuskan latar belakang dan kontribusi keilmuan dari penelitian yang dilakukan.
+	\item Pengumpulan Data dan Pengolahan Data\\
+	Penulis mengumpulkan data studi kasus dengan melakukan survey dan observasi ke lapangan dan instansi terkait di wilayah administrasi kota Bandung. Survey yang dilakukan adalah pendataan lokasi rumah sakit dan sumber daya UGD di rumah sakit tersebut. Diskusi dengan tenaga ahli di bidang yang berhubungan penanganan Unit Gawat Darurat. Data yang kemudian diolah untuk bisa digunakan sebagai knowledge acquisition di sistem pakar yang dibangun.
+	\item Analisis dan Perancangan Sistem\\
+	Data yang telah melalui tahap pengolahan direpresentasikan untuk membentuk knowledge base, aturan inferensi yang digunakan. Selain itu User Interface sebagai salah satu komponen sistem pakar dirancang pada tahap ini.
+	\item Implementasi Model\\
+	Model sistem yang telah dibangun kemudian disiapkan untuk tahap implementasi menjadi sebuah sistem pembantu pakar yang siap pakai dengan menerapkan mesin inferensi terhadap basis pengetahuan pada kasus pemilihan UGD di kota Bandung.
+	\item Pengujian dan penarikan kesimpulan\\
+	Sistem yang telah dibangun dijalankan dianalis pada lingkungan yang telah disiapkan untuk uji coba. Pengujian menganalisis apakah sistem yang dibangun sesuai dengan hipotesis diawal .Dan dari hasil pengamatan dilakukan penarikan kesimpulan.
+	\item Penyusunan Laporan\\
+	Laporan berisi dokumentasi dari tahap studi literature sampai dengan penarikan kesimpulan.
+\end{enumerate}
+
+\section{Sistematika Penulisan}
+Sistematika penulisan Tugas Akhir ini adalah sebagai berikut:
+\begin{enumerate}
+	\item Pendahuluan\\
+	Pada bagian ini dijelaskan latar belakarang, rumusan masalah, tujuan, batasan masalah, metodelogi penyelesaian masalah, sistematika penulisan dalam pengerjaan tugas akhir ini.
+	\item Landasan Teori\\
+	Bab ini menjelaskan mengenai teori ilmu yang berhubungan dengan topik yang diangkat dalam tugas akhir ini.
+	\item Analisis dan Perancangan Sistem\\
+	Pada bab ini menjelaskan metodelogi penelitian, analisis kebutuhan penelitian serta proses bagaimana proses dalam perancang sistem yang akan dibangun.
+	\item Implementasi dan Pengujian \\
+	Bab ini menjelaskan bagaimana sistem tugas akhir ini di implementasikan serta pengujian yang dilakukan untuk menganalisi hasil darin performansi sistem yang dibangun.
+	\item Kesimpuland an Saran\\
+	Kesimpulan dan saran ditarik dari penelitian yang dilakukan sebagai sumbangsih penulis untuk penelitan selanjutnya.
+\end{enumerate}
+
+\section{Hipotesis}
+Dengan menggunakan sistem pakar pemilihan UGD akan mampu menemukan kecocokan dengan kondisi pasien tanpa harus berpindah-pindah rumah sakit. Algoritma Rete mempunyai kompleksitas linear sehingga dapat menangani rule dari sistem pakar dengan skala yang semakin besar dengan tanpa mengurangi performansi. Namun, algoritma Rete membutuhkan kapasitas penyimpanan yang besar untuk menyimpan state dari sistem pakar dari tiap siklus. Pertambahan kebutuhan kapasitas penyimpanan dengan 2
+penerapan algoritma Rete sebanding dengan peningkatan kecepatan dan efisiensi komputasi.
+\iflogTA
+\else
+\section{Rencana Kegiatan}
+Rencana kegitana yang akan saya lakukan adalah sebagai berikut:
+\begin{itemize}
+    \item Studi literatur
+    \item Memeriksa hasil
+\end{itemize}
+\section{Jadwal Kegiatan}
+The table \ref{table:1} is an example of referenced \LaTeX elements. Laporan proposal ini akan dijadwalkan sesuai dengan tabel yang diberikna berikutnya. 
+
+ 
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|m{2.5cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|m{0.01cm}|}
+    \hline
+    \multirow{2}{*}{\textbf{No}} & \multirow{2}{*}{\textbf{Kegiatan}} & \multicolumn{24}{|c|}{\textbf{Bulan ke-}} \\
+    \hhline{~~------------------------}
+    {} & {} & \multicolumn{4}{|c|}{\textbf{1}} & \multicolumn{4}{|c|}{\textbf{2}} & \multicolumn{4}{|c|}{\textbf{3}} & \multicolumn{4}{|c|}{\textbf{4}} & \multicolumn{4}{|c|}{\textbf{5}} & \multicolumn{4}{|c|}{\textbf{6}}\\
+    \hline
+    1 & Studi Literatur & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}\\
+    \hline
+    2 & Pengumpulan Data & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & {} & {} & {} & {} & {} & {} & {} & {}& {} & {} & {} & {}& {} & {} & {} & {}& {} & {} & {} & {}\\
+    \hline
+    3 & Analisis dan Perancangan Sistem &  {} & {} & {} & {}  & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & {} & {} & {} & {}& {} & {} & {} & {}& {} & {} & {} & {}\\
+    \hline
+    4 & Implementasi Sistem &  {} & {} & {} & {} & {} & {} & {} & {}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & {} & {} & {} & {}& {} & {} & {} & {}\\
+    \hline
+    5 & Analisa Hasil Implementasi &  {} & {} & {} & {} & {} & {} & {} & {}& {} & {} & {} & {} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & {} & {} & {} & {}\\
+    \hline
+    6 & Penulisan Laporan & {} & {} & {} & {} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}& \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25} & \cellcolor{blue!25}\\
+    \hline
+  \end{tabular}
+  \caption{Jadwal kegiatan proposal tugas akhir}
+  \label{table:1}
+\end{table}
+
+\fi

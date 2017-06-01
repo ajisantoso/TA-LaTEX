@@ -1,0 +1,35 @@
+\select@language {bahasa}
+\contentsline {chapter}{Lembar Persetujuan}{ii}
+\contentsline {chapter}{Lembar Pernyataan}{iii}
+\contentsline {chapter}{Lembar Persembahan}{i}
+\contentsline {chapter}{Abstrak}{ii}
+\contentsline {chapter}{Abstract}{iii}
+\contentsline {chapter}{Kata Pengantar}{iv}
+\contentsline {chapter}{Daftar Isi}{v}
+\contentsline {chapter}{Daftar Gambar}{vii}
+\contentsline {chapter}{Daftar Tabel}{viii}
+\contentsline {chapter}{\numberline {I}Pendahuluan}{1}
+\contentsline {section}{\numberline {1.1}Latar Belakang}{1}
+\contentsline {section}{\numberline {1.2}Perumusan Masalah}{2}
+\contentsline {section}{\numberline {1.3}Batasan Masalah}{2}
+\contentsline {section}{\numberline {1.4}Tujuan}{2}
+\contentsline {section}{\numberline {1.5}Metodelogi Penyelesaiaan Masalah}{3}
+\contentsline {section}{\numberline {1.6}Sistematika Penulisan}{3}
+\contentsline {section}{\numberline {1.7}Hipotesis}{4}
+\contentsline {chapter}{\numberline {II}Landasan Teori}{5}
+\contentsline {section}{\numberline {2.1}Arsitektur Sistem Pakar}{5}
+\contentsline {section}{\numberline {2.2}\textit {Forward Chaining}}{6}
+\contentsline {section}{\numberline {2.3}Algoritma Rete}{7}
+\contentsline {section}{\numberline {2.4}Related Works}{9}
+\contentsline {chapter}{\numberline {III}Analisis dan Perancangan Sistem}{11}
+\contentsline {section}{\numberline {3.1}Gambaran Umum Sistem}{11}
+\contentsline {section}{\numberline {3.2}Data Kriteria}{12}
+\contentsline {section}{\numberline {3.3}Uji Akurasi}{14}
+\contentsline {section}{\numberline {3.4}Fungsional Sistem}{14}
+\contentsline {section}{\numberline {3.5}Deskripsi Lingkup Operasional}{14}
+\contentsline {chapter}{\numberline {IV}Analisis dan Perancangan Sistem}{16}
+\contentsline {section}{\numberline {4.1}title}{16}
+\contentsline {section}{\numberline {4.2}Persamaan Air Dangkal}{16}
+\contentsline {subsection}{\numberline {4.2.1}Cara memanggil pustaka}{16}
+\contentsline {chapter}{Daftar Pustaka}{17}
+\contentsline {chapter}{Lampiran}{18}

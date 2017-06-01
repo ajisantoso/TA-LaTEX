@@ -1,0 +1,175 @@
+%% This document is created by 
+%%  Dr. Putu Harry Gunawan
+%% Template untuk Proposal TA 1 dan TA
+%% Template ini digunakan untuk penulisan proposal TA 1 atau TA Fakultas Informatika, Telkom University.
+
+\documentclass[a4paper,12pt,oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{array}
+\usepackage[table]{xcolor}
+\usepackage{anysize}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[bahasa]{babel}
+\usepackage{indentfirst} %Spasi untuk paragraf pertama
+\usepackage{geometry}
+\usepackage{multirow}% http://ctan.org/pkg/multirow
+\usepackage{hhline}% http://ctan.org/pkg/hhline
+\marginsize{4cm}{3cm}{2cm}{3cm} %{left}{right}{top}{bottom}
+\usepackage[compact]{titlesec} 
+\usepackage{etoolbox}
+
+\makeatletter
+\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+
+\chapterfont{\centering}
+\newcommand{\bigsize}{\fontsize{16pt}{14pt}\selectfont}
+\chapterfont{\centering\bigsize\bfseries}
+\sectionfont{\large\bfseries}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+%\renewcommand{\chaptertitle}{BAB}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand\thesection{\arabic{chapter}.\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+%\renewcommand*{\chapterheadstartvskip}{\vspace*{-\topskip}}
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+{\centering\normalfont\bigsize\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\bigsize}
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+
+\renewcommand\bibname{Daftar Pustaka}
+\addto{\captionsbahasa}{\renewcommand{\bibname}{Daftar Pustaka}}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Berikut adalah data-data yang wajib diisi oleh mahasiswa
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Analisis dan Implementasi Algoritma Rete untuk Sistem Pakar Pemilihan Unit Gawat Darurat di Kota Bandung}\let\Title\@title   %Judul dalam bahasa Indonesia
+
+\newcommand{\EngTitle}{Analysis and Implementation of Expert System using Rete Algorithm for Selecting Emergency Room in Bandung City}  %Judul dalam bahasa Inggris
+
+\author{Aji Tri Santoso}  \let\Author\@author  %Nama mhs
+\newcommand{\NIM}{1103120130}
+\newcommand{\Prodi}{Teknik Informatika}
+\newcommand{\KK}{SIDE}
+\newcommand{\Gelar}{Komputer} 
+\date{2016}           \let\Date\@date %Maskkan hanya tahun saja
+\newcommand{\Tanggal}{22} % Tanggal Pengesahan
+\newcommand{\Bulan}{Agustus} % Bulan Pengesahan
+\newcommand{\PembimbingSatu}{Danang Junaedi, S.T., M.T.}
+\newcommand{\NIPPembimbingSatu}{14781566}
+\newcommand{\PembimbingDua}{Amarilis Putri Yanuarifiani, S.T., M.T.I.}
+\newcommand{\NIPPembimbingDua}{14891266}
+\newcommand{\Kaprodi}{Dr. Moch Arif Bijaksana, S.T., M.Sc}
+\newcommand{\NIPKaprodi}{03650312-4}
+\newif\iflogTA
+\logTAtrue   %%%%%% WARNING kode ini diaktifkan untuk format TUGAS AKHIR
+\makeatother
+\linespread{1}
+
+
+\begin{document}
+\pagenumbering{roman} 
+%%\maketitle
+\begin{titlepage}
+\thispagestyle{empty}
+%\vspace*{0.7cm}
+\include{Cover}
+\pagebreak
+
+
+
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{Lembar Persetujuan}
+\include{Lembar-Persetujuan}
+\pagebreak
+
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{Lembar Pernyataan}
+\include{Lembar-Pernyataan}
+\pagebreak
+\end{titlepage}
+\addcontentsline{toc}{chapter}{Lembar Persembahan}
+\include{Lembar-Persembahan}
+\pagebreak
+
+\addcontentsline{toc}{chapter}{Abstrak}
+\include{Abstrak-Indo}
+\iflogTA
+\pagebreak
+
+\addcontentsline{toc}{chapter}{Abstract}
+\include{Abstract-En}
+\pagebreak
+
+\addcontentsline{toc}{chapter}{Kata Pengantar}
+\include{Kata-Pengantar}
+\pagebreak
+
+\fi
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{Daftar Isi}
+\tableofcontents
+\iflogTA
+\newpage
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Daftar Gambar}
+\listoffigures
+\newpage
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Daftar Tabel}
+\listoftables
+%\pagebreak
+\fi
+%
+\cleardoublepage
+\pagenumbering{arabic}
+
+\include{Pendahuluan}
+%
+\include{Landasan-Teori}
+%
+\include{Analisis-dan-Perancangan-Sistem}
+%
+\include{Implementasi-dan-Pengujian}
+%
+%\include{Kesimpulan}
+%
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Daftar Pustaka}
+\bibliographystyle{acm} %harvard style
+\bibliography{References}
+%
+%\pagebreak
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lampiran}
+\include{Lampiran}
+\end{document}
