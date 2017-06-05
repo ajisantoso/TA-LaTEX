@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  21 MAY 2017 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.12.19)  5 JUN 2017 16:16
 entering extended mode
 **./main.tex
 (main.tex
@@ -1216,12 +1216,31 @@ File: jaringanRete.png Graphic file (type png)
 Package pdftex.def Info: jaringanRete.png used on input line 61.
 (pdftex.def)             Requested size: 269.80836pt x 296.90965pt.
 
-[8 <./jaringanRete.png>] [9]) [10]
+[8 <./jaringanRete.png>] <kodefikasi1.png, id=83, 540.51938pt x 322.20375pt>
+File: kodefikasi1.png Graphic file (type png)
+
+<use kodefikasi1.png>
+Package pdftex.def Info: kodefikasi1.png used on input line 87.
+(pdftex.def)             Requested size: 324.31412pt x 193.32373pt.
+ [9] <kodefikasi2.png, id=87, 578.16pt x 369.63094pt>
+File: kodefikasi2.png Graphic file (type png)
+
+<use kodefikasi2.png>
+Package pdftex.def Info: kodefikasi2.png used on input line 93.
+(pdftex.def)             Requested size: 346.89867pt x 221.78026pt.
+ [10 <./kodefikasi1.png> <./kodefikasi2.png>]
+<praktisispgdt.png, id=93, 353.06906pt x 169.38281pt>
+File: praktisispgdt.png Graphic file (type png)
+ <use praktisispgdt.png>
+Package pdftex.def Info: praktisispgdt.png used on input line 102.
+(pdftex.def)             Requested size: 211.84306pt x 101.63046pt.
+
+[11 <./praktisispgdt.png>]) [12]
 \openout2 = `Analisis-dan-Perancangan-Sistem.aux'.
 
  (Analisis-dan-Perancangan-Sistem.tex
 Bab III.
-<gambaranUmum.png, id=89, 521.69907pt x 220.57407pt>
+<gambaranUmum.png, id=101, 521.69907pt x 220.57407pt>
 File: gambaranUmum.png Graphic file (type png)
  <use gambaranUmum.png>
 Package pdftex.def Info: gambaranUmum.png used on input line 7.
@@ -1231,25 +1250,25 @@ Overfull \hbox (19.02122pt too wide) in paragraph at lines 7--7
  [][] 
  []
 
-[11
+[13
 
 
 
  <./gambaranUmum.png>]
-<captureSimulasi.png, id=94, 391.4625pt x 242.40562pt>
+<captureSimulasi.png, id=106, 391.4625pt x 242.40562pt>
 File: captureSimulasi.png Graphic file (type png)
 
 <use captureSimulasi.png>
 Package pdftex.def Info: captureSimulasi.png used on input line 23.
 (pdftex.def)             Requested size: 352.31299pt x 218.16302pt.
- <hasilSistem.png, id=95, 445.665pt x 287.57437pt>
+ <hasilSistem.png, id=107, 445.665pt x 287.57437pt>
 File: hasilSistem.png Graphic file (type png)
 
 <use hasilSistem.png>
 Package pdftex.def Info: hasilSistem.png used on input line 30.
 (pdftex.def)             Requested size: 222.83195pt x 143.78683pt.
- [12 <./captureSimulasi.png> <./hasilSistem.png>]
-<dataRS.png, id=100, 1008.01593pt x 382.42876pt>
+ [14 <./captureSimulasi.png> <./hasilSistem.png>]
+<dataRS.png, id=113, 1008.01593pt x 382.42876pt>
 File: dataRS.png Graphic file (type png)
  <use dataRS.png>
 Package pdftex.def Info: dataRS.png used on input line 39.
@@ -1259,7 +1278,7 @@ Overfull \hbox (4.86064pt too wide) in paragraph at lines 39--39
  [][] 
  []
 
-<dataDokter.png, id=101, 627.84563pt x 252.19218pt>
+<dataDokter.png, id=114, 627.84563pt x 252.19218pt>
 File: dataDokter.png Graphic file (type png)
  <use dataDokter.png>
 Package pdftex.def Info: dataDokter.png used on input line 58.
@@ -1268,45 +1287,57 @@ Package pdftex.def Info: dataDokter.png used on input line 58.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13 <./dataRS.png>] [14 <./dataDokter.png>]) [15]
+[15 <./dataRS.png>] [16 <./dataDokter.png>]) [17]
 \openout2 = `Implementasi-dan-Pengujian.aux'.
 
 
 (Implementasi-dan-Pengujian.tex
 Bab IV.
-) [16
+) [18
 
 
 
-] (main.bbl) [17
+] (main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 64--69
+[]\OT1/cmr/m/sc/12 Teknoprenour\OT1/cmr/m/n/12 .  \OT1/cmr/m/it/12 SPGDT Ban-du
+ng\OT1/cmr/m/n/12 .  ter-se-dia di:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--69
+\OT1/cmr/m/n/12 http://teknopreneur.com/dinamika/teknopreneur-spgdt-kota-bandun
+g-
+ []
+
+) [19
 
 
 
 ]
 \openout2 = `Lampiran.aux'.
 
- (Lampiran.tex) [18
+ (Lampiran.tex) [20
 
 
 
-] (main.aux (Cover.aux)
-(Lembar-Persetujuan.aux) (Lembar-Pernyataan.aux) (Lembar-Persembahan.aux)
-(Abstrak-Indo.aux) (Abstract-En.aux) (Kata-Pengantar.aux) (Pendahuluan.aux)
-(Landasan-Teori.aux) (Analisis-dan-Perancangan-Sistem.aux)
-(Implementasi-dan-Pengujian.aux) (Lampiran.aux))
+] (main.aux (Cover.aux) (Lembar-Persetujuan.aux)
+(Lembar-Pernyataan.aux) (Lembar-Persembahan.aux) (Abstrak-Indo.aux)
+(Abstract-En.aux) (Kata-Pengantar.aux) (Pendahuluan.aux) (Landasan-Teori.aux)
+(Analisis-dan-Perancangan-Sistem.aux) (Implementasi-dan-Pengujian.aux)
+(Lampiran.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 16272 strings out of 493333
- 310980 string characters out of 3139178
- 377683 words of memory out of 3000000
- 19342 multiletter control sequences out of 15000+200000
+ 16291 strings out of 493333
+ 311327 string characters out of 3139178
+ 377721 words of memory out of 3000000
+ 19358 multiletter control sequences out of 15000+200000
  11880 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,56p,1321b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,13n,56p,1321b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/
@@ -1318,9 +1349,9 @@ sfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (29 pages, 745078 bytes).
+Output written on main.pdf (31 pages, 920540 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
+ 175 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

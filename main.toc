@@ -20,16 +20,18 @@
 \contentsline {section}{\numberline {2.1}Arsitektur Sistem Pakar}{5}
 \contentsline {section}{\numberline {2.2}\textit {Forward Chaining}}{6}
 \contentsline {section}{\numberline {2.3}Algoritma Rete}{7}
-\contentsline {section}{\numberline {2.4}Related Works}{9}
-\contentsline {chapter}{\numberline {III}Analisis dan Perancangan Sistem}{11}
-\contentsline {section}{\numberline {3.1}Gambaran Umum Sistem}{11}
-\contentsline {section}{\numberline {3.2}Data Kriteria}{12}
-\contentsline {section}{\numberline {3.3}Uji Akurasi}{14}
-\contentsline {section}{\numberline {3.4}Fungsional Sistem}{14}
-\contentsline {section}{\numberline {3.5}Deskripsi Lingkup Operasional}{14}
-\contentsline {chapter}{\numberline {IV}Analisis dan Perancangan Sistem}{16}
-\contentsline {section}{\numberline {4.1}title}{16}
-\contentsline {section}{\numberline {4.2}Persamaan Air Dangkal}{16}
-\contentsline {subsection}{\numberline {4.2.1}Cara memanggil pustaka}{16}
-\contentsline {chapter}{Daftar Pustaka}{17}
-\contentsline {chapter}{Lampiran}{18}
+\contentsline {section}{\numberline {2.4}SPGDT}{9}
+\contentsline {section}{\numberline {2.5}Kelebihan Sistem Pakar}{11}
+\contentsline {section}{\numberline {2.6}Related Works}{11}
+\contentsline {chapter}{\numberline {III}Analisis dan Perancangan Sistem}{13}
+\contentsline {section}{\numberline {3.1}Gambaran Umum Sistem}{13}
+\contentsline {section}{\numberline {3.2}Data Kriteria}{14}
+\contentsline {section}{\numberline {3.3}Uji Akurasi}{16}
+\contentsline {section}{\numberline {3.4}Fungsional Sistem}{16}
+\contentsline {section}{\numberline {3.5}Deskripsi Lingkup Operasional}{16}
+\contentsline {chapter}{\numberline {IV}Analisis dan Perancangan Sistem}{18}
+\contentsline {section}{\numberline {4.1}title}{18}
+\contentsline {section}{\numberline {4.2}Persamaan Air Dangkal}{18}
+\contentsline {subsection}{\numberline {4.2.1}Cara memanggil pustaka}{18}
+\contentsline {chapter}{Daftar Pustaka}{19}
+\contentsline {chapter}{Lampiran}{20}

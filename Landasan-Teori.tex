@@ -72,7 +72,38 @@ Penjelasan dari jaringan yang terbentuk oleh algoritma Rete pada Gambar \ref{fig
 	\item Conflict Resolution\\
 	Pada setiap satu siklus match-resolve-act, mesin inferensi akan menemukan semua kemungkinan kecocokan untuk fakta yang sedang diolah di working memory. Setelah semua kecocokan ditemukan, aturan produksi yang berhubungan telah diaktifkan dalam agenda. Mesin inferensi akan menentukan aturan produksi yang tereksekusi.  
 \end{enumerate}
+\section {SPGDT}
+Sistem Penanggulangan Gawat Darurat Terpadu (SPGDT) dari dinas kesehatan merupakan sistem untuk penanggulangan pasien gawat darurat yang terdiri dari \textit{pra hospital, intra hospital} dan \textit{inter hospital} menekankan pada keselamat jiwa pasien menggunakan kode akses telekomunikasi 119\cite{kemenkes}. Layanan medis gawat darurat mengatur lebih khusus tentang penanganan medis bagi korban (standar medis Gawat Darurat, Tindakan Medis), kriteria Gawat Darurat, kriteria bukan Gawat Darurat serta pelatihan -pelatihan untuk peningkatan kompetensi SDM bidang kegawatdaruratan. \par
+Informasi yang bisa didapatkan pasien melalui panggilan call center 119 adaah informasi fasilitas kesehatan dan informasi ambulan. Menggunakan \textit{call tracker} praktisi SPGDT akan menulusuri lokasi penelepon kemudian dengan algoritma kegawat daruratan yang ditetapkan oleh kementrian kesehatan terdapat alur atau langkah - langkah dalam penanganan kegawat daruratan sebagai panduan bagi agen / praktisi. Informasi ketersediaan tempat tidur sudah tersedia meliputi jumlah tempat tidur kosong di Rumah Sakit baik rawat inap maupun kamar intensif. Ketenagaan dalam bidang SPGDT meliputi :
+\begin{enumerate}
+	\item Koordinator
+	\item Petugas Call Center 
+	\item Petugas kesehatan (tenaga medis atau tenaga kesehatan lainnya)
+	\item Pengemudi Ambulan
+\end{enumerate}
+\par
+Sistem Informasi Manajemen Rumah Sakit (SIM-RS) adalah sebuah sistem informasi disiapkan untuk menangani keseluruhan proses manajemen Rumah Sakit, mulai dari pelayanan diagnosa dan tindakan pasien, rekam medis, database personalia hingga pengendalian dan manajemen kamar. SIMRS yang ideal dapat melakukan "bongkar- pasang" modul untuk bisa berkomunikasi dengan layanan lainnya diluar proses bisnis Rumah Sakit. Di Indonesia terdapat sistem informasi rawat inap yang dapat menyajikan informasi ketersedian kamar tidur rawat inap kepada pasien secara \textit{real time}. Dalam pengiriman data agar seragam dan tidak terjadi kesalahan informasi telah dibuat aturan kodefikasi oleh kementrian kesehatan dengan contoh sebagai berikut :
+\begin{figure}[h]	
+	{\centering {\includegraphics[scale=0.6]{kodefikasi1.png}}\par}
+	\caption{Kodefikasi untuk penyeragaman kelas dan ruang RS}
+	\label{fig:kodefikasi1}
+\end{figure}
+\par Pada Gambar \ref{fig:kodefikasi1} memperlihatkan aturan penulisan untuk ketersidaan kamar dalam Rumah Sakit, sedangkan akan diperlihatkan kodefikasi untuk tipe pasien pada gambar \ref{fig:kodefikasi2} dibawah ini :
+\begin{figure}[h]	
+	{\centering {\includegraphics[scale=0.6]{kodefikasi2.png}}\par}
+	\caption{Kodefikasi untuk penyeragaman tipe Pasien}
+	\label{fig:kodefikasi2}
+\end{figure}
 
+\section{Kelebihan Sistem Pakar}
+Pada pemrograman sistem komputer biasa yang dapat melakukan penerapan aturan bagaimana sistem atau program dapat bekerja adalah seorang ahli IT dengan menggunakan bahasa pemrogaman. Dengan dibuatnya sistem pakar aturan atau logis sistem dalam bekerja akan diterjemahkan kedalam \textit{rule} menggunakan bahasa yang mudah dipahami oleh seorang Ahli dalam ranah tertentu tidak hanya ahli IT saja. Sehingga Ahli di bidangnya dapat melakukan \textit{review} bahkan \textit{edit} terhadap aturan logis di sistem dengan pengawasan minim seorang Ahli IT atau tidak sama sekali. Dalam praktik penggunaan sistem pakar tidak menggantikan keududukan seorang pakar tetapi untuk memasyarakatkan pengetahuan dan pengalaman pakar tersebut sehingga mudah dijangkau oleh orang awam.\par
+Dalam tugas akhir ini pengetahuan pakar yang akan digunakan oleh sistem adalah tenaga Ahli kegawat daruratan. Pakar ini dalam bertindak dalam ranah \textit{Pra-Hospital} untuk merujuk pasien ke Rumah Sakit yang mempunyai sumber daya sesuai kondisi pasien \cite{kemenkes}. 
+\begin{figure}[h]	
+	{\centering {\includegraphics[scale=0.6]{praktisispgdt.png}}\par}
+	\caption{Peran dan kerja praktisi SPGDT}
+	\label{fig:praktisi}
+\end{figure}
+Dengan menggunakan sistem pakar diharapkan kerja praktisi manual seperti pada Gambar \ref{fig:praktisi} akan terbantu. Sistem yang dibangun akan meminimalisir kesalahan rujukan ke Rumah Sakit yang ternyata tidak bisa menangani pasien. Tahap program SPGDT di kota Bandung masih berjalan setengah manual (via  telepon) tetapi telihat animo masyarakat yang tinggi ditunjukkan dengan banyaknya pertanyaan yang masuk ke saluran telepon SPGDT untuk menanyakan klinik yang buka 24 jam, maupun menanyakan Rumah Sakit mana yang mempunyai kamar ICU kosong \cite{tekno}. Hasil keluaran dari sistem pakar terbukti menunjukkan keputusan yang \textit{steady, unemotional} dan \textit{complete response.}
 \section{Related Works}
 Penelitian terkait untuk kasus ini dilakukan Zhen \cite{zhen2014} dalam penelitiannya membangun  decision rule  untuk  penjadwalan mobil ambulans. Dalam penelitan Zhen \cite{zhen2014} memperhitungan rata-rata response time dan data stokastik kondisi lalu lintas, waktu tempuh sehingga korban gawat darurat dapat dicapai dalam waktu yang efisien. Hasilnya permintaan mobil ambulans dapat dipenuhi tepat waktu sesuai rule yang dibangun. Bowen \cite{james1998} dalam penelitiannya menggunakan sistem keputusan untuk relokasi persebaran ambulan di daerah perkotaaan dengan harapan meningkatkan kesiapan ketika terjadi kejadian gawat darurat.  Hasilnya berupa distribusi mobil ambulans yang mampu melayani permintaan di satu area secara menyeluruh. Penelitian \cite{zhen2014} dan Bowen \cite{james1998} berpusat pada bagaimana meningkatkan kinerja unit ambulan sebagai transportasi ketika terjadi kejadian gawat darurat. Namun, dalam rangka memberikan pertolongan terhadap korban gawat darurat dapat tidak hanya dibutuhkan peningkatan pelayanan mobil ambulans tetapi juga ketepatan pemilihan unit gawat darurat tujuan dengan memperhatikan sudut pandang korban dan sumber daya UGD apapun mode transportasinya.   \par
 Weng dan Kuo \cite{weng2009} dalam penelitiannya membangun sistem informasi pakar gawat darurat untuk daerah dengan sumber daya medis yang kurang. Faktor yang digunakan dalma pemilihan UGD adalah kondisi pasien, jarak dari lokasi kejadian gawat darurat ke UGD tujuan,ketersediaan dokter jaga, ketersediaan ruang operasi, ketersediaan ruang ICU, ketersediaan ruang inap. Dalam penelitian tersebut dikembangkan kaidah pemilihan unit gawat darurat berdasar kondisi korban. Kaidah yang dibangun memungkinkan sistem menampilkan rumah sakit yang cocok untuk korban pada waktu kejadian gawat darurat menggunakan pola runut maju (Forward Chaining). Priyandari \cite{priyandari2011} menggunakan model kaidah pemilihan UGD dari penelitian Weng dan Kuo tetapi mengganti kriteria jarak dengan estimasi waktu tempuh untuk mengatasi arus lalulintas perkotaan yang padat. Mesin inferensi yang digunakan sama yaitu forward chaining.
